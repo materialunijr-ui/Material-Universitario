@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Intensivo BUAP 2026 - Asesorías Select Puebla</title>
+    <meta name="description" content="Curso intensivo para examen de admisión BUAP 2026. Clases en línea, simulacros y asesoría personalizada. 16 años de experiencia.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .seguridad-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .hero h1 {
+            color: #1e3c72;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .destacado {
+            background: linear-gradient(135deg, #4a90e2, #2a5298);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+        .oferta-principal {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 3px solid #1e3c72;
+            position: relative;
+        }
+        
+        .precio {
+            color: #1e3c72;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .precio-anterior {
+            text-decoration: line-through;
+            color: #666;
+            font-size: 1.5rem;
+        }
+        
+        .btn-comprar {
+            background: #2a5298;
+            color: white;
+            padding: 18px 50px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(42, 82, 152, 0.3);
+        }
+        
+        .btn-comprar:hover {
+            background: #1e3c72;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(42, 82, 152, 0.4);
+        }
+        
+        .experiencia {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        
+        .beneficios {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .beneficio-item {
+            margin: 18px 0;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        .beneficio-item:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            font-size: 1.3rem;
+        }
+        
+        .horario-clases {
+            background: #e8f0fe;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px 0;
+            border-left: 5px solid #1e3c72;
+        }
+        
+        .areas-preparacion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .area-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .presentacion {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px 0;
+            text-align: center;
+            border: 2px solid #1e3c72;
+        }
+        
+        .presentacion img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #1e3c72;
+        }
+        
+        .pasos-compra {
+            background: #e8f0fe;
+            border-radius: 15px;
+            padding: 35px;
+            margin: 30px 0;
+            border-left: 5px solid #1e3c72;
+        }
+        
+        .paso {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .contacto-seguro {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px solid #1e3c72;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 15px 0;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+        
+        .garantia {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .datos-bancarios {
+            background: #f8f9ff;
+            border: 2px solid #1e3c72;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 2rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .oferta-principal {
+                padding: 25px;
+            }
+            
+            .precio {
+                font-size: 2.5rem;
+            }
+            
+            .btn-comprar {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+            
+            .areas-preparacion {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="seguridad-badge">🔒 16 Años de Experiencia</div>
+        <div class="container">
+            <h1>Asesorías Select Puebla</h1>
+            <p>Curso Intensivo BUAP 2026 - ¡Garantizamos tu Ingreso!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- PRESENTACIÓN -->
+        <section class="presentacion">
+            <div class="container">
+                <h2>👋 ¡Hola, soy Jonathan!</h2>
+                <p><strong>Promotor de Asesorías Select</strong></p>
+                <p>Con 16 años de experiencia ayudando a estudiantes a cumplir sus sueños universitarios</p>
+            </div>
+        </section>
+
+        <!-- OFERTA PRINCIPAL -->
+        <section class="oferta-principal">
+            <h2>🚀 CURSO INTENSIVO BUAP 2026</h2>
+            <p>✅ <strong>TODO INCLUIDO</strong> - Desde $350 MXN</p>
+            <div class="precio">$350 MXN</div>
+            <p class="precio-anterior">Valor real: $1,500 MXN</p>
+            <button class="btn-comprar" onclick="comprarAhora()">INSCRIBIRME AL CURSO</button>
+            <p><strong>🎓 +3,000 estudiantes preparados con éxito</strong></p>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="experiencia">
+            <h2>🏆 16 Años de Trayectoria Educativa</h2>
+            <p>Líderes en preparación para admisión BUAP desde 2008</p>
+        </section>
+
+        <!-- HORARIO Y CLASES -->
+        <section class="horario-clases">
+            <h2>📅 Horario de Clases</h2>
+            <div class="beneficio-item"><strong>Lunes a Viernes:</strong> 7:00 PM - 11:00 PM (En línea)</div>
+            <div class="beneficio-item"><strong>Sábados Presenciales:</strong> Marzo a Junio 2026 (12 sesiones)</div>
+            <div class="beneficio-item"><strong>8 Profesoras Egresadas BUAP</strong> - Expertas en sus áreas</div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="beneficios">
+            <h2 style="text-align: center; margin-bottom: 30px;">🎁 Todo lo que incluye tu curso:</h2>
+            <div class="beneficio-item"><strong>4 Sesiones de Clase General</strong> - Zoom: Español y Matemáticas</div>
+            <div class="beneficio-item"><strong>4 Classroom con Clases Grabadas</strong> - Acceso 24/7 al contenido</div>
+            <div class="beneficio-item"><strong>Grupo de Facebook Exclusivo</strong> - 500+ guías de estudio</div>
+            <div class="beneficio-item"><strong>100 Simulacros</strong> - 1 por semana, evaluación constante</div>
+            <div class="beneficio-item"><strong>Asesoría Personalizada</strong> - Ficha, convocatoria, trámites</div>
+            <div class="beneficio-item"><strong>Clases Presenciales Sabatinas</strong> - 12 sábados intensivos</div>
+            <div class="beneficio-item"><strong>Duración Completa</strong> - Desde tu inscripción hasta una semana antes del examen</div>
+        </section>
+
+        <!-- ÁREAS DE PREPARACIÓN -->
+        <section>
+            <h2 style="text-align: center; margin-bottom: 20px;">🎯 Preparamos para Todas las Áreas:</h2>
+            <div class="areas-preparacion">
+                <div class="area-card">
+                    <h3>🥼⚕️</h3>
+                    <h4>Ciencias Naturales y de la Salud</h4>
+                    <p>Medicina, Enfermería, Química, Biología</p>
+                </div>
+                <div class="area-card">
+                    <h3>👷🏻‍♀️</h3>
+                    <h4>Ingenierías y Ciencias Exactas</h4>
+                    <p>Civil, Mecánica, Computación, Arquitectura</p>
+                </div>
+                <div class="area-card">
+                    <h3>👩🏻‍⚖️</h3>
+                    <h4>Ciencias Sociales y Humanidades</h4>
+                    <p>Derecho, Psicología, Comunicación, Filosofía</p>
+                </div>
+                <div class="area-card">
+                    <h3>💼</h3>
+                    <h4>Económico-Administrativo</h4>
+                    <p>Administración, Contaduría, Economía, Turismo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GARANTÍA -->
+        <section class="garantia">
+            <h3>🛡️ Garantía de Preparación Integral</h3>
+            <p>Si sigues nuestro método y no te sientes preparado, te damos asesoría extra sin costo.</p>
+        </section>
+
+        <!-- CÓMO INSCRIBIRSE -->
+        <section class="pasos-compra">
+            <h2 style="text-align: center; margin-bottom: 25px;">💳 Inscríbete en 5 Minutos:</h2>
+            <div class="paso">
+                <strong>Paso 1:</strong> Haz clic en "INSCRIBIRME AL CURSO"
+            </div>
+            <div class="paso">
+                <strong>Paso 2:</strong> Realiza transferencia de $350 MXN a:
+                <div class="datos-bancarios">
+                    <strong>🏦 Banco Azteca</strong><br>
+                    <strong>📊 Número de Cuenta: 0000 2108 0734 52</strong><br>
+                    <strong>👤 Titular: Asesorías Select Puebla</strong>
+                </div>
+            </div>
+            <div class="paso">
+                <strong>Paso 3:</strong> Envía tu comprobante por WhatsApp al: 776-227-5442
+            </div>
+            <div class="paso">
+                <strong>Paso 4:</strong> Recibe acceso INMEDIATO y comienza tus clases
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contacto-seguro">
+            <h2>📞 ¿Tienes dudas sobre el curso?</h2>
+            <p>Habla directamente con Jonathan, promotor de Asesorías Select:</p>
+            <a href="https://wa.me/527762275442?text=Hola%20Jonathan,%20quiero%20información%20sobre%20el%20curso%20intensivo%20BUAP%202026" class="whatsapp-btn" target="_blank">
+                💬 WhatsApp: 776-227-5442
+            </a>
+            <p><strong>Horario de atención: 8:00 AM - 10:00 PM</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Asesorías Select Puebla S.A. de R.L. - Curso Intensivo BUAP 2026</p>
+            <p>16 años formando los profesionales del futuro</p>
+        </div>
+    </footer>
+
+    <script>
+        function comprarAhora() {
+            const mensaje = `¡Excelente decisión! Para inscribirte al curso intensivo BUAP 2026:\n\n` +
+                          `1. Realiza transferencia de $350 MXN a:\n` +
+                          `   💳 Banco Azteca\n` +
+                          `   📊 Cuenta: 0000 2108 0734 52\n` +
+                          `   👤 Titular: Asesorías Select Puebla\n\n` +
+                          `2. Envía comprobante a WhatsApp:\n` +
+                          `   📱 776-227-5442\n\n` +
+                          `3. Recibirás acceso INMEDIATO al curso\n\n` +
+                          `4. Comienza tus clases esta misma semana\n\n` +
+                          `¿Listo para garantizar tu ingreso a la BUAP?`;
+            
+            if(confirm(mensaje)) {
+                window.open('https://wa.me/527762275442?text=Hola%20Jonathan,%20acabo%20de%20realizar%20el%20pago%20para%20el%20curso%20intensivo%20BUAP%202026.%20Mi%20comprobante%20está%20listo.', '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
